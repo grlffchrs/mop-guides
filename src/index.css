@@ -1,0 +1,144 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f7fa;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #232946;
+  color: #fff;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.sidebar li {
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 3vw;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 16px #0001;
+}
+
+.guide-viewer {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.guide-viewer h1, .guide-viewer h2, .guide-viewer h3 {
+  color: #232946;
+  margin-top: 2rem;
+}
+
+.guide-viewer ul {
+  margin-left: 1.5rem;
+}
+
+.empty {
+  color: #888;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.accordion-section {
+  margin: 1.5rem 0;
+  border: 1px solid #eebbc3;
+  border-radius: 6px;
+  background: #f9f9fb;
+}
+
+.accordion-title {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #232946;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s;
+}
+
+.accordion-title:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+
+.accordion-content {
+  padding: 1rem 1.5rem 1.2rem 1.5rem;
+  border-top: 1px solid #eebbc3;
+  background: #fff;
+}
+
+.guide-section {
+  margin-bottom: 2.5rem;
+}
+
+.accordion-section {
+  margin: 1rem 0 0.5rem 0;
+  border: 1px solid #eebbc3;
+  border-radius: 6px;
+  background: #f9f9fb;
+}
+
+.accordion-title {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #232946;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s;
+}
+
+.accordion-title:hover {
+  background: #eebbc3;
+  color: #232946;
+}
+
+.accordion-content {
+  padding: 1rem 1.5rem 1.2rem 1.5rem;
+  border-top: 1px solid #eebbc3;
+  background: #fff;
+}
+
