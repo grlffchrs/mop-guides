@@ -1,4 +1,4 @@
-// src/pages/lei-shi.jsx
+// src/pages/tsulong.jsx
 import React from "react";
 import Nav from "../components/Nav";
 import BossGuide from "../components/BossGuide";
@@ -10,9 +10,9 @@ import {
   strategy,
   summary,
   links
-} from "../data/lei-shi";
+} from "../data/tsulong";
 
-export default function LeiShi() {
+export default function Tsulong() {
   return (
     <>
       <Nav />
