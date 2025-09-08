@@ -1,0 +1,125 @@
+/* src/styles/theme.css */
+:root {
+  --jade: #2e7d6f;
+  --gold: #c8aa6e;
+  --parchment: #f3e6c1;
+  --ink: #1f2328;
+  --lacquer: #7b1e1e;
+  --mist: #6a7d8f;
+  --shadow: rgba(0,0,0,.18);
+  --ring: #d9c897;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap');
+
+html, body {
+  background: var(--parchment) url('/textures/parchment-fiber.png') repeat;
+  color: var(--ink);
+  font-family: 'Cinzel', ui-serif, Georgia, serif;
+  min-height: 100vh;
+}
+
+.page-mist::before {
+  content: "";
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(120% 80% at 30% -10%, rgba(106,125,143,.18), transparent 60%),
+              radial-gradient(120% 80% at 70% 110%, rgba(106,125,143,.12), transparent 60%);
+  animation: drift 22s ease-in-out infinite alternate;
+  mix-blend-mode: multiply;
+}
+@keyframes drift {
+  from { transform: translateY(-2%) }
+  to   { transform: translateY(2%) }
+}
+
+.scroll {
+  position: relative;
+  background: #fffaf0;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px var(--shadow);
+  padding: 16px 18px;
+  margin: 18px 0;
+  isolation: isolate;
+}
+.scroll::before, .scroll::after {
+  content: "";
+  position: absolute; left: -8px; right: -8px; height: 10px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  filter: blur(.6px);
+}
+.scroll::before { top: -6px; }
+.scroll::after { bottom: -6px; }
+
+.section-title {
+  font-family: "Uncial Antiqua", Cinzel, serif;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: #fff;
+  background: linear-gradient(180deg, #348a79, #2e7d6f);
+  border: 2px solid var(--ring);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.3);
+  box-shadow: 0 3px 10px var(--shadow);
+}
+
+.ref-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #f8f2de;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 3px 9px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95em;
+}
+.ref-chip:hover { background: #fff9e8; }
+
+.mechanic {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 8px 10px;
+  border-left: 4px solid var(--jade);
+  background: rgba(46,125,111,.06);
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.tag-easy { background:#dff3e9; color:#1f6b54; border:1px solid #a7d7c5; }
+.tag-hard { background:#fde7e7; color:#7b1e1e; border:1px solid #e3b4b4; }
+.tag {
+  display:inline-block; padding:2px 8px; border-radius:999px; font-size:.8rem; margin-left:6px;
+}
+
+.btn-jade {
+  background: linear-gradient(180deg,#3c9c88,#2e7d6f);
+  color:#fff; border:2px solid var(--ring);
+  padding: 8px 14px; border-radius:10px; font-weight:700;
+  text-shadow:0 1px 0 rgba(0,0,0,.25);
+}
+.btn-jade:hover { filter: brightness(1.04); }
+
+.divider {
+  --c: var(--gold);
+  height: 16px; margin: 16px 0;
+  background:
+    radial-gradient(circle at 10% 60%, var(--c) 16%, transparent 17%) repeat-x,
+    radial-gradient(circle at 30% 40%, var(--c) 12%, transparent 13%) repeat-x,
+    radial-gradient(circle at 50% 60%, var(--c) 16%, transparent 17%) repeat-x;
+  background-size: 40px 16px, 40px 16px, 40px 16px;
+  opacity:.45;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body { background:#151716 url('/textures/dark-parchment.png') repeat; color:#e9e2d0; }
+  .scroll { background:#1b1e1a; border-color:#9a8650; }
+  .section-title { background: linear-gradient(180deg, #2e6d60, #24594d); border-color:#b8a572; }
+  .mechanic { background: rgba(46,125,111,.12); border-left-color:#2e7d6f; }
+  .ref-chip { background:#2a2a22; color:#e9e2d0; border-color:#9a8650; }
+}
