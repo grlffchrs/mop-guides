@@ -1,7 +1,7 @@
 // src/data/tsulong.js
 export const boss = {
   name: "Tsulong (10H)",
-  icon: "/icons/mop/inv_tsulong.png", // Use a Tsulong portrait or dragon icon
+  icon: "inv_tsulong", // Wowhead CDN icon name; change if you prefer another icon
   difficulty: "Recommended"
 };
 
@@ -27,14 +27,14 @@ export const links = {
 };
 
 export const overview = [
-  { text: "Two phases: Night (survive, kill adds) and Day (heal boss, kill adds).", link: null },
-  { text: "Fight alternates every ~2 minutes; mechanics change each phase.", link: null }
+  { text: "Two phases: Night (survive, kill adds) and Day (heal boss, kill adds)." },
+  { text: "Fight alternates every ~2 minutes; mechanics change each phase." }
 ];
 
 export const raidComp = [
-  { text: "2 tanks required.", link: null },
-  { text: "3 healers recommended for Day phase burst.", link: null },
-  { text: "Any DPS mix; assign add control roles.", link: null }
+  { text: "2 tanks required." },
+  { text: "3 healers recommended for Day phase burst." },
+  { text: "Any DPS mix; assign add control roles." }
 ];
 
 export const mechanics = [
@@ -43,64 +43,65 @@ export const mechanics = [
     name: "Dread Shadows",
     spellId: 122768,
     spellName: "Dread Shadows",
-    icon: "/icons/mop/spell_shadow_shadowwordpain.png",
+    icon: "spell_shadow_shadowwordpain",
     text: "Stacking DoT, increases damage taken by 10% per stack. Reset at 5–7 stacks by stepping into the sunbeam briefly. Don't camp in the beam or it disappears for everyone.",
     link: "roqai_040",
     ref: "Roqai 0:40"
   },
   {
     name: "Dark of Night",
-    icon: "/icons/mop/spell_shadow_possession.png",
+    icon: "spell_shadow_possession",
     text: "Adds spawn in waves, fixate on the sunbeam. Use slows/knockbacks; don’t let them reach the beam or you wipe.",
     link: "roqai_240",
     ref: "Roqai 2:40"
   },
   {
     name: "Nightmares",
-    icon: "/icons/mop/spell_shadow_mindbomb.png",
+    icon: "spell_shadow_mindbomb",
     text: "Purple swirls; move out before they detonate. If hit, healers dispel the fear.",
     link: "roqai_154",
     ref: "Roqai 1:54"
   },
   {
     name: "Shadow Breath",
-    icon: "/icons/mop/ability_warrior_taunt.png",
-    text: "Tanks face away from raid, use defensives, swap on breath debuff. Position boss near (not in) the beam for easy resets.",
+    icon: "ability_warrior_taunt",
+    text: "Tanks face away from raid, use defensives, swap on breath debuff. Position boss near (not the beam) for easy resets.",
     link: "roqai_226",
     ref: "Roqai 2:26"
   },
+
   // Day Phase
   {
     name: "Healers Heal Tsulong",
-    icon: "/icons/mop/spell_holy_heal.png",
+    icon: "spell_holy_heal",
     text: "All healing done reduces his HP for the next Night. Save all healing cooldowns for this phase.",
     link: "roqai_432",
     ref: "Roqai 4:32"
   },
   {
     name: "Sun Breath",
-    icon: "/icons/mop/spell_fire_sunfire.png",
+    icon: "spell_fire_sunfire",
     text: "Every ~30s, stand in front for 500% healing/25% mana. Don't let beacon healer get this buff (it overwrites the 1,500%).",
     link: "roqai_500",
     ref: "Roqai 5:00"
   },
   {
     name: "Light of Day Beacons",
-    icon: "/icons/mop/spell_holy_prayerofhealing.png",
+    icon: "spell_holy_prayerofhealing",
     text: "Clickable, spawn every ~10s, grant 1,500% healing for 6s. Assign your best single-target healer to rotate and use all CDs.",
     link: "roqai_706",
     ref: "Roqai 7:06"
   },
   {
     name: "Unstable Sha",
-    icon: "/icons/mop/achievement_boss_shaofanger.png",
+    icon: "achievement_boss_shaofanger",
     text: "Spawn around the room, move to Tsulong. If they reach him, they heal him and prolong the fight. Split DPS to kill/slow/stun.",
     link: "roqai_855",
     ref: "Roqai 8:55"
   },
   {
     name: "Big Add",
-    icon: "/icons/mop/achievement_boss_shaofanger.png",
+    icon: "achievement_boss_shaofanger",
     text: "Tanks bring in front, kill just before breath so the breath wipes the small fearing adds that spawn.",
     link: "roqai_637",
     ref: "Roqai 6:37"
@@ -108,13 +109,11 @@ export const mechanics = [
 ];
 
 export const strategy = [
-  { text: "Assign add-killing responsibility.", link: null },
-  { text: "Time healing cooldowns and beacon clicks with breath.", link: null },
-  { text: "Don’t let adds reach beam/boss. Don’t overwrite beacon buff with breath.", link: null }
+  { text: "Assign add-killing responsibility." },
+  { text: "Time healing cooldowns and beacon clicks with breath." },
+  { text: "Don’t let adds reach beam/boss. Don’t overwrite beacon buff with breath." }
 ];
 
 export const summary = {
-  text: "Survive Night, heal Tsulong in Day, control adds, and time cooldowns for phase transitions.",
-  link: null,
-  ref: null
+  text: "Survive Night, heal Tsulong in Day, control adds, and time cooldowns for phase transitions."
 };

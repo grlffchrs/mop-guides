@@ -1,26 +1,26 @@
 // src/data/lei-shi.js
 export const boss = {
   name: "Lei Shi (10H)",
-  icon: "/icons/mop/inv_lei_shi.png",
+  icon: "inv_lei_shi", // Wowhead CDN icon name; change if you prefer another icon
   difficulty: "Recommended"
 };
 
 export const links = {
-  roqai_007: "url://1",
-  roqai_014: "url://2",
-  roqai_025: "url://3",
-  roqai_105: "url://4",
-  roqai_114: "url://5",
-  roqai_131: "url://6",
-  roqai_200: "url://7",
-  roqai_300: "url://8",
-  roqai_339: "url://11",
-  roqai_425: "url://9",
-  roqai_607: "url://10",
-  roqai_1222: "url://12",
-  roqai_1244: "url://13",
-  roqai_1250: "url://14",
-  roqai_1315: "url://15",
+  roqai_007: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=7",
+  roqai_014: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=14",
+  roqai_025: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=25",
+  roqai_105: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=65",
+  roqai_114: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=74",
+  roqai_131: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=91",
+  roqai_200: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=120",
+  roqai_300: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=180",
+  roqai_339: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=219",
+  roqai_425: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=265",
+  roqai_607: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=367",
+  roqai_1222: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=742",
+  roqai_1244: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=764",
+  roqai_1250: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=770",
+  roqai_1315: "https://www.youtube.com/watch?v=DzIDctr6dGM&t=795"
 };
 
 export const overview = [
@@ -39,7 +39,7 @@ export const mechanics = [
     name: "Soft Enrage",
     spellId: 123705,
     spellName: "Afraid",
-    icon: "/icons/mop/spell_frost_chillingblast.png",
+    icon: "spell_frost_chillingblast",
     text: "Every 10% HP lost, Lei Shi gains 8% spell haste. Healers should save throughput cooldowns for the end.",
     link: "roqai_131",
     ref: "Roqai 1:31"
@@ -48,21 +48,21 @@ export const mechanics = [
     name: "Tank Swap",
     spellId: 123121,
     spellName: "Spray",
-    icon: "/icons/mop/spell_frost_frostbolt.png",
+    icon: "spell_frost_frostbolt",
     text: "Lei Shi does not auto-attack; instead, she casts 'Spray' on the active tank. 'Spray' deals AoE damage (2.5 yards) and applies a stacking debuff (+12% frost damage taken for 10s). Tanks must stand apart and taunt-swap to let debuffs drop.",
     link: "roqai_200",
     ref: "Roqai 2:00–2:39"
   },
   {
     name: "Hide",
-    icon: "/icons/mop/ability_stealth.png",
+    icon: "ability_stealth",
     text: "Boss disappears; raid must use AoE to reveal her.",
     link: "roqai_300",
     ref: "Roqai 3:00"
   },
   {
     name: "Get Away",
-    icon: "/icons/mop/spell_nature_windfury.png",
+    icon: "spell_nature_windfury",
     text: "Boss moves to center, pushes raid back, and deals heavy raid damage until 4% HP is dealt. Run against the wind to reduce damage by 50%.",
     link: "roqai_339",
     ref: "Roqai 3:39",
@@ -70,7 +70,7 @@ export const mechanics = [
   },
   {
     name: "Protect",
-    icon: "/icons/mop/achievement_boss_protectors.png",
+    icon: "achievement_boss_protectors",
     text: "Every 20% HP, Lei Shi becomes immune, spawns four adds ('Protectors'). CC three adds, kill one to end the phase. Quick, organized crowd control is essential.",
     link: "roqai_425",
     ref: "Roqai 4:25–5:44",
@@ -79,7 +79,7 @@ export const mechanics = [
   },
   {
     name: "Scary Fog",
-    icon: "/icons/mop/spell_shadow_mindtwisting.png",
+    icon: "spell_shadow_mindtwisting",
     text: "Players outside a ring get a stacking DoT and take 10% more damage per stack (4k/sec per stack, 35s duration). Assign two ranged DPS to rotate carrying stacks (ideally 7–10), then bring the damage amp to the boss or adds for burst phases. During 'Hide,' the whole raid may get a stack—just stay spread out to avoid overlapping damage amps.",
     link: "roqai_607",
     ref: "Roqai 6:07–9:44"

@@ -1,15 +1,19 @@
 // src/components/BossGuide.jsx
 import React from "react";
 import "../styles/theme.css";
+import WowIcon from "./WowIcon";
 
-function BossMedallion({ name, src }) {
+function BossMedallion({ name, icon }) {
   return (
     <div style={{display:'flex', alignItems:'center', gap:16, margin:'10px 0 14px'}}>
       <div style={{
         width:64, height:64, borderRadius:'50%',
         border:'3px solid var(--gold)', outline:'3px solid var(--jade)',
-        background:`center/cover url(${src})`
-      }} />
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: '#222'
+      }}>
+        <WowIcon name={icon} size={56} alt={name} />
+      </div>
       <h1 className="section-title" style={{margin:0}}>{name}</h1>
     </div>
   );
@@ -60,7 +64,7 @@ export default function BossGuide({
   return (
     <div className="page-mist" style={{position:'relative', zIndex:1, padding:'24px 0'}}>
       <div style={{maxWidth:700, margin:'0 auto', position:'relative', zIndex:1}}>
-        <BossMedallion name={boss.name} src={boss.icon} />
+        <BossMedallion name={boss.name} icon={boss.icon} />
 
         <section className="scroll">
           <h2 className="section-title">
@@ -94,7 +98,7 @@ export default function BossGuide({
           <h2 className="section-title">Key Mechanics</h2>
           {mechanics.map((mech, i) => (
             <div className="mechanic" key={i}>
-              <img src={mech.icon} width="28" height="28" alt="" />
+              <WowIcon name={mech.icon} />
               <div>
                 <strong>
                   {mech.name}
