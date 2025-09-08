@@ -58,5 +58,76 @@ export const guides = [
         `
       }
     ]
+  },
+  {
+    id: "leishi-10h",
+    name: "Lei Shi 10H",
+    sections: [
+      {
+        title: "Overview",
+        concise: `
+- Easiest boss in ToES Heroic; great for quick progression. ([Roqai 0:07](https://www.youtube.com/watch?v=DzIDctr6dGM&t=7))
+- If you only have time for one heroic, do this one. ([Roqai 0:14](https://www.youtube.com/watch?v=DzIDctr6dGM&t=14))
+        `,
+        detailed: `
+- Lei Shi is the third and by far the easiest boss in Terrace of Endless Springs Heroic. Highly recommended for a quick and smooth progression. ([Roqai 0:07](https://www.youtube.com/watch?v=DzIDctr6dGM&t=7))
+- Ideal for limited raid time: If you only have time for one heroic boss, do this one. ([Roqai 0:14](https://www.youtube.com/watch?v=DzIDctr6dGM&t=14))
+        `
+      },
+      {
+        title: "Raid Composition",
+        concise: `
+- 2 healers possible, 3 healers makes it trivial. ([Roqai 0:25](https://www.youtube.com/watch?v=DzIDctr6dGM&t=25))
+- 2 tanks required. ([Roqai 1:05](https://www.youtube.com/watch?v=DzIDctr6dGM&t=65))
+- Any DPS mix works, more ranged is slightly better. ([Roqai 1:14](https://www.youtube.com/watch?v=DzIDctr6dGM&t=74))
+        `,
+        detailed: `
+- Healers: Fight is two-healable, but three healers make it trivial. ([Roqai 0:25](https://www.youtube.com/watch?v=DzIDctr6dGM&t=25))
+- Tanks: Two tanks required. ([Roqai 1:05](https://www.youtube.com/watch?v=DzIDctr6dGM&t=65))
+- DPS: Any mix works, but more ranged is slightly better. ([Roqai 1:14](https://www.youtube.com/watch?v=DzIDctr6dGM&t=74))
+        `
+      },
+      {
+        title: "Key Mechanics",
+        concise: `
+- Every 10% HP lost, Lei Shi gains 8% spell haste (soft enrage). ([Roqai 1:31](https://www.youtube.com/watch?v=DzIDctr6dGM&t=91))
+- Tanks taunt swap due to stacking frost debuff from "Spray." ([Roqai 2:00](https://www.youtube.com/watch?v=DzIDctr6dGM&t=120))
+- Every 30–45s: "Hide" (AoE to reveal) or "Get Away" (pushback, run against wind, deal 4% HP to end). ([Roqai 3:00](https://www.youtube.com/watch?v=DzIDctr6dGM&t=180))
+- Every 20% HP: "Protect" spawns 4 adds—CC 3, kill 1. ([Roqai 4:25](https://www.youtube.com/watch?v=DzIDctr6dGM&t=265))
+- "Scary Fog": 2 ranged rotate stacks for damage amp; stay spread during Hide. ([Roqai 6:07](https://www.youtube.com/watch?v=DzIDctr6dGM&t=367))
+        `,
+        detailed: `
+- **Soft Enrage ("Afraid"):** Every 10% HP lost, Lei Shi gains 8% spell haste (casting speed). Healers should save throughput cooldowns for the end. ([Roqai 1:31](https://www.youtube.com/watch?v=DzIDctr6dGM&t=91))
+- **Tank Swap ("Spray"):** Lei Shi does not auto-attack; instead, she casts "Spray" on the active tank. "Spray" deals AoE damage (2.5 yards) and applies a stacking debuff (+12% frost damage taken for 10s). Tanks must stand apart and taunt-swap to let debuffs drop. ([Roqai 2:00–2:39](https://www.youtube.com/watch?v=DzIDctr6dGM&t=120))
+- **Special Abilities (Every 30–45s):**
+  - **Hide:** Boss disappears; raid must use AoE to reveal her. ([Roqai 3:00](https://www.youtube.com/watch?v=DzIDctr6dGM&t=180))
+  - **Get Away:** Boss moves to center, pushes raid back, and deals heavy raid damage until 4% HP is dealt. Run against the wind to reduce damage by 50%. ([Roqai 3:39](https://www.youtube.com/watch?v=DzIDctr6dGM&t=219))
+- **Protect (Every 20% HP):** Lei Shi becomes immune, spawns four adds ("Protectors"). CC three adds, kill one to end the phase. Quick, organized crowd control is essential. ([Roqai 4:25–5:44](https://www.youtube.com/watch?v=DzIDctr6dGM&t=265))
+- **Scary Fog (Damage Amp Mechanic):** Players outside a ring get a stacking DoT and take 10% more damage per stack (4k/sec per stack, 35s duration). Assign two ranged DPS to rotate carrying stacks (ideally 7–10), then bring the damage amp to the boss or adds for burst phases. During "Hide," the whole raid may get a stack—just stay spread out to avoid overlapping damage amps. ([Roqai 6:07–9:44](https://www.youtube.com/watch?v=DzIDctr6dGM&t=367))
+        `
+      },
+      {
+        title: "Strategy Tips",
+        concise: `
+- Main focus: Manage "Scary Fog" stacks and CC adds quickly. ([Roqai 12:22](https://www.youtube.com/watch?v=DzIDctr6dGM&t=742))
+- Slow and steady: Fight is forgiving with 3 healers. ([Roqai 12:44](https://www.youtube.com/watch?v=DzIDctr6dGM&t=764))
+- Avoid silly deaths: Pay attention to add control and don't let "Scary Fog" stacks get too high. ([Roqai 12:50](https://www.youtube.com/watch?v=DzIDctr6dGM&t=770))
+        `,
+        detailed: `
+- Main focus: Manage "Scary Fog" stacks and CC adds quickly. ([Roqai 12:22](https://www.youtube.com/watch?v=DzIDctr6dGM&t=742))
+- Slow and steady: Don’t panic if stacks aren’t perfect; the fight is very forgiving with three healers. ([Roqai 12:44](https://www.youtube.com/watch?v=DzIDctr6dGM&t=764))
+- Avoid silly deaths: Pay attention to add control and don’t let "Scary Fog" stacks get too high on one player. ([Roqai 12:50](https://www.youtube.com/watch?v=DzIDctr6dGM&t=770))
+        `
+      },
+      {
+        title: "Summary",
+        concise: `
+- Lei Shi is a loot piñata if you manage add control and damage amp mechanics. ([Roqai 13:15](https://www.youtube.com/watch?v=DzIDctr6dGM&t=795))
+        `,
+        detailed: `
+- Lei Shi is a loot piñata if you manage add control and damage amp mechanics. Assign two ranged for "Scary Fog," use three healers if possible, and keep the raid spread during AoE phases. ([Roqai 13:15](https://www.youtube.com/watch?v=DzIDctr6dGM&t=795))
+        `
+      }
+    ]
   }
 ];
